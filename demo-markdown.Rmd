@@ -1,0 +1,33 @@
+---
+title: "Demo-Markdown"
+output:
+  word_document: default
+  html_document: default
+date: "2023-12-11"
+---
+
+## Salamander Migration
+
+* **Tiger**
+
+  + *Ambystoma tigrinum*
+
+* **Spotted**
+
+  + *Ambystoma maculatum*
+
+* **Marbled**
+
+  + *Ambystoma opacum*
+
+```{r, echo=FALSE}
+salamanders <- cars
+summary(salamanders)
+```
+Salamanders can be as fast as cars. This is definitely not car data disguised as salamander data.
+```{r, echo=FALSE}
+library(ggplot2)
+p <- ggplot(data=salamanders, aes(x=speed, y=dist)) + geom_point()
+p + labs(Title = "Speed of Salamanders (kmph)")
+```
+
