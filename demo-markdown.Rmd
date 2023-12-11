@@ -31,3 +31,7 @@ p <- ggplot(data=salamanders, aes(x=speed, y=dist)) + geom_point()
 p + labs(Title = "Speed of Salamanders (kmph)")
 ```
 
+### Session Info
+```{r}
+sessionInfo()
+```
